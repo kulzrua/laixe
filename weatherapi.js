@@ -51,7 +51,7 @@ $(document).ready(function() {
             url: 'https://api.weatherapi.com/v1/forecast.json?key=2b992667354644fa90f70229202408&q='+ lcity+'&days=3&lang=vi',
             success: function(data)
             {
-             console.log(data + "Hiếu");			
+             console.log(data);			
               var day1 = data.forecast.forecastday[0];var day2 = data.forecast.forecastday[1];var day3 = data.forecast.forecastday[2];
               var code = '<table class="table table-striped table-bordered text-center">';
               code+='<thead class="thead-dark"><tr><th  class="text-center" scope="col">Ngày</th>'+ 
