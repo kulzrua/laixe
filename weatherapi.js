@@ -64,6 +64,8 @@ $(document).ready(function() {
               code+="<tr><td>Nhiệt độ thấp nhất</td><td>"+ day1.day.mintemp_c +" °C</td><td>"+ day2.day.mintemp_c +" °C</td><td>"+ day3.day.mintemp_c +" °C</td></tr>";
               code+="<tr><td>Nhiệt độ trung bình</td><td>"+ day1.day.avgtemp_c +" °C</td><td>"+ day2.day.avgtemp_c +" °C</td><td>"+ day3.day.avgtemp_c +" °C</td></tr>";
               code+="<tr><td>Độ ẩm</td><td>"+ day1.day.avghumidity +"%</td><td>"+ day2.day.avghumidity +"%</td><td>"+ day3.day.avghumidity +"%</td></tr>";
+              code+="<tr><td>Tốc độ gió</td><td>"+ day1.day.maxwind_kph +" km/h</td><td>"+ day2.day.maxwind_kph +" km/h</td><td>"+ day3.day.maxwind_kph +" km/h</td></tr>";
+              code+="<tr><td>UV</td><td>"+ day1.day.uv +"</td><td>"+ day2.day.uv +"</td><td>"+ day3.day.uv +"</td></tr>";
               code+="<tr><td>Mặt trời mọc</td><td>"+ day1.astro.sunrise +"</td><td>"+ day2.astro.sunrise +"</td><td>"+ day3.astro.sunrise +"</td></tr>";
               code+="<tr><td>Mặt trời lặn</td><td>"+ day1.astro.sunset +"</td><td>"+ day2.astro.sunset +"</td><td>"+ day3.astro.sunset +"</td></tr>";
               code+="</tbody>";
