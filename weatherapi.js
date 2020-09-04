@@ -79,13 +79,14 @@ $(document).ready(function() {
               $('.weather .max').html(day1.day.maxtemp_c + " °C");
               $('.weather .min').html(day1.day.mintemp_c + " °C");
               $('.weather .icon').html("<img class='ori' src='"+data.current.condition.icon.replace("64x64","128x128") +"' alt='"+data.current.condition.text +"'>");
+	console.log("lat:" + data.location.lat + " | lon:" + data.location.lon);
             }
         });
     }
 fillWeather(localcity);
 $(".khuvuc ul li").on("click",function(i){
 	var t=$(this).attr("tenlocal");
-	var l=$(this).attr("lcity");fillWeather(l);console.log(t + " " + l );
+	var l=$(this).attr("lcity");fillWeather(l);
 	$('.weather .city').html(t);
 	$("#addtitle1").html("Dự báo thời tiết " + t);
 	$("html,body").animate({scrollTop:$("#addtitle1").offset().top-100},"slow");
